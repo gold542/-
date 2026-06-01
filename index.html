@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>轩辕租车 | 城市自驾与商务出行</title>
+  <meta name="description" content="轩辕租车提供城市短租、商务用车、机场接送和新能源租车服务。">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="轩辕租车首页">
+      <span class="brand-mark">轩</span>
+      <span>轩辕租车</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#fleet">车型</a>
+      <a href="#services">服务</a>
+      <a href="#booking">预约</a>
+      <a href="#contact">联系</a>
+      <a href="admin.html">后台</a>
+    </nav>
+    <a class="nav-action" href="tel:400-800-6200">400-800-6200</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="轩辕租车">
+      <div class="hero-media" role="img" aria-label="一辆停在城市道路旁的高级轿车"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">全国 32 城 · 24 小时取还</p>
+        <h1>轩辕租车</h1>
+        <p class="hero-copy">为周末自驾、商务接待、机场接送和长期用车提供整洁可靠的车辆与清楚透明的价格。</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#booking">立即预约</a>
+          <a class="secondary-button" href="#fleet">查看车型</a>
+        </div>
+        <div class="hero-stats" aria-label="服务数据">
+          <span><strong>32</strong> 城可租</span>
+          <span><strong>24h</strong> 取还</span>
+          <span><strong>98%</strong> 准时交付</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-book" id="booking" aria-labelledby="booking-title">
+      <div class="section-heading">
+        <p class="eyebrow">快速预订</p>
+        <h2 id="booking-title">选城市、日期和车型，马上估价</h2>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <label>
+          取车城市
+          <select id="city" name="city">
+            <option>上海</option>
+            <option>北京</option>
+            <option>广州</option>
+            <option>深圳</option>
+            <option>杭州</option>
+            <option>成都</option>
+          </select>
+        </label>
+        <label>
+          取车日期
+          <input id="startDate" type="date" name="startDate" required>
+        </label>
+        <label>
+          还车日期
+          <input id="endDate" type="date" name="endDate" required>
+        </label>
+        <label>
+          用车类型
+          <select id="tripType" name="tripType">
+            <option value="business">商务接待</option>
+            <option value="family">家庭自驾</option>
+            <option value="airport">机场接送</option>
+            <option value="long">长期租赁</option>
+          </select>
+        </label>
+        <button type="submit">查询价格</button>
+      </form>
+      <div class="booking-result" id="bookingResult" aria-live="polite">
+        选择日期后可查看预估费用和推荐车型。
+      </div>
+    </section>
+
+    <section class="fleet-section" id="fleet" aria-labelledby="fleet-title">
+      <div class="section-heading">
+        <p class="eyebrow">精选车队</p>
+        <h2 id="fleet-title">从通勤到接待，都有合适座驾</h2>
+      </div>
+      <div class="filters" aria-label="车辆筛选">
+        <button class="filter-button is-active" data-filter="all" type="button">全部</button>
+        <button class="filter-button" data-filter="suv" type="button">SUV</button>
+        <button class="filter-button" data-filter="business" type="button">商务</button>
+        <button class="filter-button" data-filter="ev" type="button">新能源</button>
+        <button class="filter-button" data-filter="economy" type="button">经济型</button>
+      </div>
+      <div class="fleet-grid" id="fleetGrid">
+        <article class="car-card" data-category="business" data-price="498">
+          <img src="assets/images/business-car.jpg" alt="黑色商务轿车">
+          <div class="car-body">
+            <span class="tag">商务优选</span>
+            <h3>别克GL8 陆尊</h3>
+            <p>MPV 空间宽敞、后排舒适，适合客户接待、会议通勤和多人商务行程。</p>
+            <div class="car-meta">
+              <span>7 座</span>
+              <span>自动挡</span>
+              <span>含基础保险</span>
+            </div>
+            <strong>¥498 / 天</strong>
+          </div>
+        </article>
+        <article class="car-card" data-category="suv" data-price="688">
+          <img src="assets/images/tank300.jpg" alt="硬派越野 SUV">
+          <div class="car-body">
+            <span class="tag">硬派越野</span>
+            <h3>坦克300 越野版</h3>
+            <p>方盒子造型、四驱底盘和高通过性，适合周边越野、露营和山路自驾。</p>
+            <div class="car-meta">
+              <span>5 座</span>
+              <span>四驱</span>
+              <span>露营装备可选</span>
+            </div>
+            <strong>¥688 / 天</strong>
+          </div>
+        </article>
+        <article class="car-card" data-category="ev" data-price="388">
+          <img src="assets/images/ev-car.jpg" alt="正在充电的新能源车">
+          <div class="car-body">
+            <span class="tag">新能源</span>
+            <h3>比亚迪汉 EV</h3>
+            <p>纯电轿车、座舱安静、动力响应快，适合城市通勤与短途商务出行。</p>
+            <div class="car-meta">
+              <span>5 座</span>
+              <span>纯电</span>
+              <span>免费充电地图</span>
+            </div>
+            <strong>¥388 / 天</strong>
+          </div>
+        </article>
+        <article class="car-card" data-category="economy" data-price="238">
+          <img src="assets/images/economy-car.jpg" alt="停在路边的经济型轿车">
+          <div class="car-body">
+            <span class="tag">经济实用</span>
+            <h3>大众朗逸</h3>
+            <p>紧凑型轿车、省油好开、取还灵活，适合日常代步和短期城市用车。</p>
+            <div class="car-meta">
+              <span>5 座</span>
+              <span>低油耗</span>
+              <span>新手友好</span>
+            </div>
+            <strong>¥238 / 天</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <p class="eyebrow">服务保障</p>
+        <h2 id="services-title">把麻烦留给我们，把时间还给行程</h2>
+      </div>
+      <div class="service-grid">
+        <article>
+          <span>01</span>
+          <h3>门店与上门取还</h3>
+          <p>核心商圈、高铁站、机场均可安排交付，长租客户支持固定点位服务。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>车况透明</h3>
+          <p>交车前完成清洁、胎压、油电、灯光和随车工具检查，现场确认车况单。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>企业月结</h3>
+          <p>为行政、销售和项目团队提供用车台账、发票归集和司机增配方案。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">联系顾问</p>
+        <h2 id="contact-title">告诉我们你的行程</h2>
+        <p>工作日 10 分钟内回复，紧急用车可直接拨打服务热线。</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>
+          姓名
+          <input name="name" type="text" placeholder="请输入姓名" required>
+        </label>
+        <label>
+          手机
+          <input name="phone" type="tel" placeholder="请输入手机号" required>
+        </label>
+        <label>
+          需求
+          <textarea name="message" rows="4" placeholder="例如：上海虹桥机场接机，商务 5 座，明天 14:00"></textarea>
+        </label>
+        <button type="submit">提交需求</button>
+        <p class="form-note" id="contactNote" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 轩辕租车</span>
+    <span>沪ICP备示例 20260530 号</span>
+    <span>客服热线：400-800-6200</span>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

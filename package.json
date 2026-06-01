@@ -1,0 +1,16 @@
+{
+  "name": "xuanyuan-rental",
+  "version": "1.0.0",
+  "description": "轩辕租车网站与零依赖 Node 后端",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "keywords": [
+    "rental",
+    "car",
+    "hbuilderx"
+  ],
+  "author": "",
+  "license": "UNLICENSED"
+}
