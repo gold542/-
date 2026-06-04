@@ -42,7 +42,7 @@ window.addEventListener("scroll", () => {
   siteHeader.classList.toggle("is-scrolled", window.scrollY > 18);
 });
 
-const revealItems = document.querySelectorAll(".quick-book, .fleet-section, .services, .contact, .car-card, .service-grid article");
+const revealItems = document.querySelectorAll(".quick-book, .experience-strip, .fleet-section, .services, .process-section, .contact, .car-card, .service-grid article, .process-line article");
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -128,6 +128,7 @@ function getRentalDays(start, end) {
 function getRecommendation(type) {
   const options = {
     business: { name: "别克GL8 陆尊", price: 498 },
+    luxury: { name: "奥迪A6L", price: 588 },
     family: { name: "坦克300 越野版", price: 688 },
     airport: { name: "别克GL8 陆尊", price: 498 },
     long: { name: "比亚迪汉 EV", price: 388 }

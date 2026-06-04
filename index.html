@@ -28,36 +28,36 @@
       <div class="hero-media" role="img" aria-label="一辆停在城市道路旁的高级轿车"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <p class="eyebrow">全国 32 城 · 24 小时取还</p>
+        <p class="eyebrow">日落海岸 · 轻装出发</p>
+        <div class="hero-kicker">
+          <span>海岸公路</span>
+          <span>周末短逃</span>
+          <span>城市轻旅</span>
+        </div>
         <h1>轩辕租车</h1>
-        <p class="hero-copy">为周末自驾、商务接待、机场接送和长期用车提供整洁可靠的车辆与清楚透明的价格。</p>
+        <p class="hero-copy">把车钥匙交到你手里，把目的地留给风景。轩辕租车陪你从城市边缘出发，驶向日落、海岸和轻松一点的生活。</p>
         <div class="hero-actions">
-          <a class="primary-button" href="#booking">立即预约</a>
-          <a class="secondary-button" href="#fleet">查看车型</a>
+          <a class="primary-button" href="#booking">计划一次出发</a>
+          <a class="secondary-button" href="#fleet">挑选旅伴</a>
         </div>
         <div class="hero-stats" aria-label="服务数据">
-          <span><strong>32</strong> 城可租</span>
-          <span><strong>24h</strong> 取还</span>
-          <span><strong>98%</strong> 准时交付</span>
+          <span><strong>1</strong> 城轻取</span>
+          <span><strong>24h</strong> 随心还</span>
+          <span><strong>98%</strong> 准时出发</span>
         </div>
       </div>
     </section>
 
     <section class="quick-book" id="booking" aria-labelledby="booking-title">
       <div class="section-heading">
-        <p class="eyebrow">快速预订</p>
-        <h2 id="booking-title">选城市、日期和车型，马上估价</h2>
+        <p class="eyebrow">轻出发计划</p>
+        <h2 id="booking-title">选好日期，把风景排进行程</h2>
       </div>
       <form class="booking-form" id="bookingForm">
         <label>
           取车城市
           <select id="city" name="city">
-            <option>上海</option>
-            <option>北京</option>
-            <option>广州</option>
-            <option>深圳</option>
-            <option>杭州</option>
-            <option>成都</option>
+            <option>呼和浩特</option>
           </select>
         </label>
         <label>
@@ -72,22 +72,42 @@
           用车类型
           <select id="tripType" name="tripType">
             <option value="business">商务接待</option>
+            <option value="luxury">轻奢出行</option>
             <option value="family">家庭自驾</option>
             <option value="airport">机场接送</option>
             <option value="long">长期租赁</option>
           </select>
         </label>
-        <button type="submit">查询价格</button>
+        <button type="submit">生成出发报价</button>
       </form>
       <div class="booking-result" id="bookingResult" aria-live="polite">
-        选择日期后可查看预估费用和推荐车型。
+        选择日期后可查看预估费用和适合这趟旅程的车型。
       </div>
+    </section>
+
+    <section class="experience-strip" aria-label="服务亮点">
+      <article>
+        <span>01</span>
+        <h2>像整理行李一样整备车辆</h2>
+        <p>清洁、油电、轮胎和随车工具提前确认，出发时少一点琐碎。</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h2>把预算留给旅途</h2>
+        <p>日租价、保险和增值服务提前说明，不让隐藏费用破坏心情。</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h2>有人照看你的行程</h2>
+        <p>预约、交车、续租、还车都有人响应，旅途只管向前。</p>
+      </article>
     </section>
 
     <section class="fleet-section" id="fleet" aria-labelledby="fleet-title">
       <div class="section-heading">
-        <p class="eyebrow">精选车队</p>
-        <h2 id="fleet-title">从通勤到接待，都有合适座驾</h2>
+        <p class="eyebrow">旅途座驾</p>
+        <h2 id="fleet-title">每一种出发，都有自己的车</h2>
+        <p class="section-note">从海岸自驾到城市漫游，用真实车型和清晰标价，帮你挑一台刚好合适的旅伴。</p>
       </div>
       <div class="filters" aria-label="车辆筛选">
         <button class="filter-button is-active" data-filter="all" type="button">全部</button>
@@ -102,7 +122,7 @@
           <div class="car-body">
             <span class="tag">商务优选</span>
             <h3>别克GL8 陆尊</h3>
-            <p>MPV 空间宽敞、后排舒适，适合客户接待、会议通勤和多人商务行程。</p>
+            <p>MPV 空间宽敞、后排舒适，适合多人度假、客户接待和一段不赶路的旅程。</p>
             <div class="car-meta">
               <span>7 座</span>
               <span>自动挡</span>
@@ -111,12 +131,26 @@
             <strong>¥498 / 天</strong>
           </div>
         </article>
+        <article class="car-card" data-category="business" data-price="588">
+          <img src="assets/images/audi-a6.jpg" alt="奥迪 A6L 商务轿车">
+          <div class="car-body">
+            <span class="tag">轻奢轿车</span>
+            <h3>奥迪A6L</h3>
+            <p>行政级轿车、座舱安静、后排体面，适合商务会面、城市度假和想把路程开得更从容的一天。</p>
+            <div class="car-meta">
+              <span>5 座</span>
+              <span>自动挡</span>
+              <span>高级商务</span>
+            </div>
+            <strong>¥588 / 天</strong>
+          </div>
+        </article>
         <article class="car-card" data-category="suv" data-price="688">
           <img src="assets/images/tank300.jpg" alt="硬派越野 SUV">
           <div class="car-body">
             <span class="tag">硬派越野</span>
             <h3>坦克300 越野版</h3>
-            <p>方盒子造型、四驱底盘和高通过性，适合周边越野、露营和山路自驾。</p>
+            <p>方盒子造型、四驱底盘和高通过性，适合追日落、去露营和走一段山路。</p>
             <div class="car-meta">
               <span>5 座</span>
               <span>四驱</span>
@@ -130,7 +164,7 @@
           <div class="car-body">
             <span class="tag">新能源</span>
             <h3>比亚迪汉 EV</h3>
-            <p>纯电轿车、座舱安静、动力响应快，适合城市通勤与短途商务出行。</p>
+            <p>纯电轿车、座舱安静、动力响应快，适合城市轻旅与短途周末出发。</p>
             <div class="car-meta">
               <span>5 座</span>
               <span>纯电</span>
@@ -144,7 +178,7 @@
           <div class="car-body">
             <span class="tag">经济实用</span>
             <h3>大众朗逸</h3>
-            <p>紧凑型轿车、省油好开、取还灵活，适合日常代步和短期城市用车。</p>
+            <p>紧凑型轿车、省油好开、取还灵活，适合临时起意的城市漫游。</p>
             <div class="car-meta">
               <span>5 座</span>
               <span>低油耗</span>
@@ -158,32 +192,57 @@
 
     <section class="services" id="services" aria-labelledby="services-title">
       <div class="section-heading">
-        <p class="eyebrow">服务保障</p>
-        <h2 id="services-title">把麻烦留给我们，把时间还给行程</h2>
+        <p class="eyebrow">旅途安心感</p>
+        <h2 id="services-title">少一点奔波，多一点松弛</h2>
+        <p class="section-note">从预约到还车，我们把细节照看好，让你把注意力放回路上、风里和同行的人。</p>
       </div>
       <div class="service-grid">
         <article>
           <span>01</span>
-          <h3>门店与上门取还</h3>
-          <p>核心商圈、高铁站、机场均可安排交付，长租客户支持固定点位服务。</p>
+          <h3>把车送到出发点</h3>
+          <p>核心商圈、高铁站、机场均可安排交付，少绕路，多留时间给风景。</p>
         </article>
         <article>
           <span>02</span>
-          <h3>车况透明</h3>
-          <p>交车前完成清洁、胎压、油电、灯光和随车工具检查，现场确认车况单。</p>
+          <h3>出发前心里有底</h3>
+          <p>清洁、胎压、油电、灯光和随车工具逐项检查，现场确认车况单。</p>
         </article>
         <article>
           <span>03</span>
-          <h3>企业月结</h3>
+          <h3>工作也能轻一点</h3>
           <p>为行政、销售和项目团队提供用车台账、发票归集和司机增配方案。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="process-section" aria-labelledby="process-title">
+      <div class="section-heading">
+        <p class="eyebrow">旅程开始前</p>
+        <h2 id="process-title">三步，把出发变简单</h2>
+      </div>
+      <div class="process-line">
+        <article>
+          <span>计划</span>
+          <h3>选定城市、日期与车型</h3>
+          <p>提交后生成订单编号，顾问按库存确认最适合的方案。</p>
+        </article>
+        <article>
+          <span>交车</span>
+          <h3>带着好心情拿钥匙</h3>
+          <p>取车时核对证件、保险和车况单，出发前把细节讲清楚。</p>
+        </article>
+        <article>
+          <span>返程</span>
+          <h3>轻松还车，继续生活</h3>
+          <p>还车后确认油电、里程和时间，费用清楚，行程收尾也从容。</p>
         </article>
       </div>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div>
-        <p class="eyebrow">联系顾问</p>
-        <h2 id="contact-title">告诉我们你的行程</h2>
+        <p class="eyebrow">下一站去哪</p>
+        <h2 id="contact-title">把想去的地方告诉我们</h2>
         <p>工作日 10 分钟内回复，紧急用车可直接拨打服务热线。</p>
       </div>
       <form class="contact-form" id="contactForm">
@@ -197,7 +256,7 @@
         </label>
         <label>
           需求
-          <textarea name="message" rows="4" placeholder="例如：上海虹桥机场接机，商务 5 座，明天 14:00"></textarea>
+          <textarea name="message" rows="4" placeholder="例如：周六去海边露营，想租坦克300，上午 10:00 取车"></textarea>
         </label>
         <button type="submit">提交需求</button>
         <p class="form-note" id="contactNote" aria-live="polite"></p>
