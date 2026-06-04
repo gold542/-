@@ -332,7 +332,8 @@ function readAdminPasswordHash() {
     return "";
   }
 
-  const config = JSON.parse(fs.readFileSync(filePath, "utf8") || "{}");
+  const configText = fs.readFileSync(filePath, "utf8").replace(/^\uFEFF/, "");
+  const config = JSON.parse(configText || "{}");
 
   return typeof config.passwordHash === "string" ? config.passwordHash : "";
 }
